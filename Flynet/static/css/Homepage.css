@@ -178,3 +178,47 @@ footer {
   height: 30px;
   margin: 0 40px;
 }
+.blog_section {
+  width: auto;
+  height: 945px;
+}
+ .blog_section .container{
+  width: 1320px;
+  height: 640px;
+  top: 225px;
+  left: 60px;
+  gap: 58.5px;
+ }
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 401px;
+  height: 640px;
+
+}
+
+.blog-post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 100%;
+  height: 323px;
+}
+
+.blog-post .badge-popular {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.blog-post .badge-popular.blue {
+  background-color: #007bff;
+  color: white;
+}
