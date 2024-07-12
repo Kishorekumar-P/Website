@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    /* background-color: #000; */
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+}
+
+header .navbar-brand img {
+    width: 100px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main .container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+main .row.text-center .col-md-4 h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main .row.text-center .col-md-4 p {
+    font-size: 1.2em;
+}
+.carousel-item {
+    height: 500px;
+    width: 6585px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.hero-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tab-content h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}

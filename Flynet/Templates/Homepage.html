@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{%static 'css/Homepage.css'%}">
         <title>Flynet</title>
         <!-- Required meta tags -->
-        <meta charset="utf-8" />
+        <meta charset="utf-8"/>
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -26,118 +26,211 @@
         <main>
             <section class="Herosection_section">
                 <header>
-                    <nav class="navbar navbar-expand-sm fixed-top ">
-                        <div class="container-fluid">
-                          <img class="header_logo"src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <link rel="stylesheet" href="#">
-                            </span>
-                          </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
-                              <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" href="#">About</a>
-                              </li>
-                              <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-auto text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Service
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" aria-current="page" href="#">Blog & Gallery</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact</a>
-                              </li>
-                            </ul>
-                            <button type="button">Enqiure Now</button>
-                            <button type="button">Let's chat</button>
+                    <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
+                        <div class="container-fluid" >
+                            <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: 138px; height:58px;">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon">
+                                  <!-- <link rel="stylesheet" href="Homepage.html"> -->
+                              </span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white" style="padding-right: 10px;">
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" href="About_us">About</a>
+                                </li>
+                                <li class="nav-item dropdown ">
+                                  <a class="nav-link dropdown-auto text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Service
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">VR</a></li>
+                                    <li><a class="dropdown-item" href="#"></a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" aria-current="page" href="#">Blog & Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" href="#">Contact</a>
+                                </li>
+                              </ul>
+                              <div class="nav_button">
+                                <button class="Enquire_button" type="button">Enqiure Now</button>
+                                <button class="Lets_chat_button"type="button">Let's chat</button>
+                              </div>
+  
                           </div>
                         </div>
                       </nav>
                 </header>
-                <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
-                        <div class="carousel-item " style="background-image: url('{% static 'assets/Sliding_image1' %}')">
-                            <div class="hero-content text-center">
-                                <h1 class="display-4 text-center">Surveillance Solution</h1>
-                                <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
-                                    immersive digital experiences that blend virtual and real worlds<br>
-                                    for various applications, from training simulations to interactive<br>
-                                    presentations.</p>
-                            </div>
+                      <div class="carousel-item active" style="background-image: url('{% static 'assets/Sliding_image1.png' %}')" >
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">Surveillance Solution</h1>
+                            <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
                         </div>
-                        <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image2.png'%}')">
-                            <div class="hero-content text-center">
-                                <h1 class="display-4">Welcome to My Website</h1>
-                                <p class="lead">This is the second slide.</p>
-                            </div>
+                      </div>
+                      <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image2.png'%}')">
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">Drone Technologies</h1>
+                            <p class="lead"><br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
+                        </div>                      </div>
+                      <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image3.png' %}')">
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">IOT Solutions</h1>
+                            <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
+                        </div>   
+                      </div>
+                      <div class="carousel-item active" style="background-image: url('{% static 'assets/Sliding_image4.png' %}')" >
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">Mobility</h1>
+                            <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
                         </div>
-                        <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image3.png' %}')">
-                            <div class="hero-content text-center">
-                                <h1 class="display-4">Welcome to My Website</h1>
-                                <p class="lead">This is the third slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item " style="background-image: url('{% static 'assets/Sliding_image4.png' %}')">
-                            <div class="hero-content text-start">
-                                <h1 class="display-4 text-start">Welcome to My Website</h1>
-                                <p class="lead">This is the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image5.png' %}')">
-                            <div class="hero-content text-center">
-                                <h1 class="display-4">Welcome to My Website</h1>
-                                <p class="lead">This is the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image6.png' %}')">
-                            <div class="hero-content text-center">
-                                <h1 class="display-4">Welcome to My Website</h1>
-                                <p class="lead">This is the third slide.</p>
-                            </div>
-                        </div>
+                      </div>
+                      <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image5.png'%}')">
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">Social Media Management</h1>
+                            <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
+                        </div>                      </div>
+                      <div class="carousel-item" style="background-image: url('{% static 'assets/Sliding_image6.png' %}')">
+                        <div class="hero-content text-start" style="margin:5px 70px 10px;">
+                            <h1 class="display-4 text-start">AR, VR Solutions</h1>
+                            <p class="lead">Our company offers AR, VR, and MR services, crafting<br>
+                                immersive digital experiences that blend virtual and real worlds<br>
+                                for various applications, from training simulations to interactive<br>
+                                presentations.</p>
+                        </div>   
+                      </div>
                     </div>
-                    <a class="carousel-control-prev fixed-bottom" href="#heroCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </a>
-                </div>
-
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
-            <section class="logo_scroll_section">
+            <!-- <section class="logo_scroll_section">
 
-            </section>
+            </section> -->
             <section class="about_us_section">
-
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h1>About Us</h1>
+                  </div>
+                  <div class="col-md-3"><img src="{%static 'assets/left_arrow.png'%}" alt=""></div>
+                  
+                  <div class="col-md-6">
+                    <p>
+                      Welcome to the fantastical world of Flynet Technologies, where we're not just your allies on this epic tech odyssey—we're your co-conspirators in shaking up the universe! Fueled by an insatiable thirst for the next big thing and a pledge to be nothing short of legendary, we whisk businesses off to a realm of unimaginable success with our magic bag of digital tricks
+                    </p>
+                    <p>Founded in 2023, Flynet Technologies is renowned as a leader in digital transformation, driving client growth through the adoption of advanced technologies. As demand for digital transformation services continues to increase, Flynet remains at the forefront of innovation. </p>
+                    <div>
+                      <button type="button">Know More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="scrolling_logos_section">
+              <div class="logos">
+                <div class="logos-slide">
+                  <img src="{% static 'assets/scroll1.png'%}"/>
+                  <img src="{% static 'assets/scroll2.png'%}"/>
+                  <img src="{% static 'assets/scroll3.png'%}"/>
+                  <img src="{% static 'assets/scroll4.png'%}"/>
+                  <img src="{% static 'assets/scroll5.png'%}"/>
+                  <img src="{% static 'assets/scroll6.png'%}"/>
+                  <img src="{% static 'assets/scroll1.png'%}"/>
+                  <img src="{% static 'assets/scroll2.png'%}"/>
+                  <img src="{% static 'assets/scroll3.png'%}"/>
+                  <img src="{% static 'assets/scroll4.png'%}"/>
+                  <img src="{% static 'assets/scroll5.png'%}"/>
+                  <img src="{% static 'assets/scroll6.png'%}"/>
+                  <img src="{% static 'assets/scroll1.png'%}"/>
+                  <img src="{% static 'assets/scroll2.png'%}"/>
+                  <img src="{% static 'assets/scroll3.png'%}"/>
+                  <img src="{% static 'assets/scroll4.png'%}"/>
+                  <img src="{% static 'assets/scroll5.png'%}"/>
+                  <img src="{% static 'assets/scroll6.png'%}"/>
+                </div>
             </section>
             <section class="our_service_section">
-
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <p></p>
+                  </div>
+                </div>
+              </div>
             </section>
             <section class="why_choose_us_section">
 
             </section>
             <section class="innovate_elevate_inspire_section">
-
+              <img class="innovate_elevate"src="{%static 'assets/innovate_elevate.png'%}" alt="" style="width: 100%;">
             </section>
             <section class="blog_section">
 
             </section>
         </main>
         <footer>
-            <!-- place footer here -->
+            <div class="container">
+              <div class="footer-content">
+                  <div class="footer-section contact">
+                      <h3>Contact</h3>
+                      <p># F-215, F Block,</p>
+                      <p>1st Cross Street, Anna Nagar East,</p>
+                      <p>Chennai - 600 012,</p>
+                      <p>Tamilnadu, India.</p>
+                  </div>
+                  <div class="footer-section menu">
+                      <h3>Menu</h3>
+                      <ul>
+                          <li><a href="#home">Home</a></li>
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#blogs">Blogs & Gallery</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <li><a href="#services">Services</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-section follow">
+                      <h3>Follow Us On</h3>
+                      <div class="social-links">
+                          <a href="#"><img src="" alt="Facebook"></a>
+                          <a href="#"><img src="" alt="Twitter"></a>
+                          <a href="#"><img src="" alt="LinkedIn"></a>
+                      </div>
+                      <button onclick="document.getElementById('contact').scrollIntoView()">Enquire Now</button>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <p>&copy; 2024 Powered and secured by Flynet Technologies.</p>
+              </div>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -153,20 +246,20 @@
         ></script>
 
         <script>
-            $(document).ready(function() {
-                $('.scroll-button-left').click(function() {
-                    $('.scrolling-wrapper').animate({
-                        scrollLeft: '-=100'
-                    }, 500);
-                });
+        //     $(document).ready(function() {
+        //         $('.scroll-button-left').click(function() {
+        //             $('.scrolling-wrapper').animate({
+        //                 scrollLeft: '-=100'
+        //             }, 500);
+        //         });
         
-                $('.scroll-button-right').click(function() {
-                    $('.scrolling-wrapper').animate({
-                        scrollLeft: '+=100'
-                    }, 500);
-                });
-            });
-        </script>
+        //         $('.scroll-button-right').click(function() {
+        //             $('.scrolling-wrapper').animate({
+        //                 scrollLeft: '+=100'
+        //             }, 500);
+        //         });
+        //     });
+        // </script>
     
     </body>
 </html>
