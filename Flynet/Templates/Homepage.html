@@ -187,12 +187,12 @@
             </section>
             <section class="blog_section">
     
-              <div class="container mt-5">
-                  <p class="mb-4" style="font-weight: 400; size: 64px; ">Latest From The Blog</p>
+              <div class="container">
+                  <p class="mb-4" style="font-weight: 400; font-size: 64px; ">Latest From The Blog</p>
                   <div class="row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class="blog-post position-relative">
-                              <img src="your-image-source.jpg" alt="Blog Image">
+                              <img src="{% static 'assets/ripon_building.png' %}" alt="Blog Image">
                               <span class="badge badge-popular">Popular</span>
                               <div class="p-3">
                                   <p class="text-muted mb-1">Aug 28, 2023 - 2 min</p>
@@ -208,7 +208,7 @@
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class="blog-post position-relative">
-                              <img src="your-image-source.jpg" alt="Blog Image">
+                              <img src="{% static 'assets/ripon_building.png' %}" alt="Blog Image">
                               <span class="badge badge-popular blue">Popular</span>
                               <div class="p-3">
                                   <p class="text-muted mb-1">Aug 28, 2023 - 1 min</p>
@@ -224,7 +224,7 @@
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class="blog-post position-relative">
-                              <img src="your-image-source.jpg" alt="Blog Image">
+                              <img src="{% static 'assets/ripon_building.png' %}" alt="Blog Image">
                               <span class="badge badge-popular">Popular</span>
                               <div class="p-3">
                                   <p class="text-muted mb-1">Aug 28, 2023 - 1 min</p>
@@ -243,17 +243,21 @@
             </section>
         </main>
         <footer>
+          <img src="{%static 'assets/flynet_logo.png'%}" style="width:130px; height: 80px; padding: -60px -60px;" alt="">
             <div class="container">
               <div class="footer-content">
                   <div class="footer-section contact">
-                      <h3>Contact</h3>
+                      <h1>Contact</h1><br>
                       <p># F-215, F Block,</p>
                       <p>1st Cross Street, Anna Nagar East,</p>
                       <p>Chennai - 600 012,</p>
                       <p>Tamilnadu, India.</p>
+                      <div>
+                        <button onclick="document.getElementById('contact').scrollIntoView()">Enquire Now</button>
+                      </div>
                   </div>
                   <div class="footer-section menu">
-                      <h3>Menu</h3>
+                      <h1>Menu</h1><br>
                       <ul>
                           <li><a href="#home">Home</a></li>
                           <li><a href="#about">About</a></li>
@@ -263,19 +267,56 @@
                       </ul>
                   </div>
                   <div class="footer-section follow">
-                      <h3>Follow Us On</h3>
+                      <h1>Follow Us On</h1><br>
                       <div class="social-links">
                           <a href="#"><img src="" alt="Facebook"></a>
                           <a href="#"><img src="" alt="Twitter"></a>
                           <a href="#"><img src="" alt="LinkedIn"></a>
                       </div>
-                      <button onclick="document.getElementById('contact').scrollIntoView()">Enquire Now</button>
                   </div>
               </div>
-              <div class="footer-bottom">
-                  <p>&copy; 2024 Powered and secured by Flynet Technologies.</p>
-              </div>
+            </div><br><br><br>
+            <div class="footer-bottom text-end">
+              <p>&copy; 2024 Powered and secured by Flynet Technologies.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </div>
+          <!-- <div class="footer">
+            <div class="container">
+                <div class="row">
+                  
+                    <div class="col-md-4 contact">
+                        <h5>Contact</h5>
+                        <address>
+                            # F-215, F Block,<br>
+                            1st Cross Street, Anna Nagar East,<br>
+                            Chennai - 600 012,<br>
+                            Tamilnadu, India.
+                        </address>
+                        <button class="btn btn-outline-light btn-sm">Enquire now</button>
+                    </div>
+               
+                    <div class="col-md-4 menu">
+                        <h5>Menu</h5>
+                        <ul><a href="#">Home</a></ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </div>
+
+                    <div class="col-md-4 social">
+                        <h5>Follow Us On</h5>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mt-3">© 2017 Powered and secured by Flynet Technologies.</p>
+                    </div>
+                </div>
             </div>
+          </div> -->
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
