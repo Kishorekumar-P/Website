@@ -1,0 +1,111 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="{%static 'css/Blog&gallery.css'%}">
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header> 
+            {% include 'nav_bar.html' %}
+        </header>
+        <main>
+            <section class="blogpage_section">
+                <div class="container">
+                    <p class="our_blogs_text">Our Blogs</p>
+                    <div class="blog-grid">
+                        <div class="blog-item technology">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image">
+                            <div class="blog-content">
+                                <span class="badge badge-primary">Technology</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div>
+                        </div>
+                        <div class="blog-item technology">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image">
+                            <div class="blog-content"> <main></main>
+                                <span class="badge badge-primary">Technology</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div> <main>Asian champions Trophy 2023 | watch chennai's iconic Ripon buidling light up to celebrate hockey </main>
+                        </div>
+                        <div class="blog-item popular">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image"> 
+                            <div class="blog-content">
+                                <span class="badge badge-warning">Popular</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div>
+                        </div>
+                        <div class="blog-item technology">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image">
+                            <div class="blog-content">
+                                <span class="badge badge-primary">Technology</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div>
+                        </div>
+                        <div class="blog-item technology">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image">
+                            <div class="blog-content">
+                                <span class="badge badge-primary">Technology</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div>
+                        </div>
+                        <div class="blog-item popular">
+                            <img src="{%static 'assets/ripon_building.png'%}" alt="Blog Image">
+                            <div class="blog-content">
+                                <span class="badge badge-warning">Popular</span>
+                                <p>Asian Champions Trophy 2023 | Watch Chennai's iconic Ripon building light up to celebrate hockey</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more blog items as needed -->
+                    </div>
+                </div>
+            
+            </section>
+            <section class="gallery_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <h1 class="text-center my-4">Gallery</h1>
+                            <div class="gallery" id="gallery">
+                              <!-- Images will be injected here by JavaScript -->
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="gallery.js"></script>
+    </body>
+</html>
+

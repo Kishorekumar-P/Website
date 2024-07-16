@@ -1,0 +1,67 @@
+{%load static%}
+<header>
+  <link rel="stylesheet" href="{%static 'css/Homepage.css'%}">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+  
+    <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
+        <div class="container-fluid" >
+          <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: 138px; height:58px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+              </span>
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                ...
+              </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white" style="padding-right: 10px;">
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="Homepage">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="About_us">About</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-auto text-white" href="service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Service
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">AI Based Surveillance Systems</a></li>
+                    <li><a class="dropdown-item" href="#">Drone Product & Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Smart City Solutions</a></li>
+                    <li><a class="dropdown-item" href="#">IT & Audio/Visual Consulting</a></li>
+                    <li><a class="dropdown-item" href="#">Advanced Display Systems</a></li>
+                    <li><a class="dropdown-item" href="#">Data Centre</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="Blog_and_gallery">Blog & Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="">Contact</a>
+                </li>
+              </ul>
+              <div class="nav_button">
+                <button class="Enquire_button" type="button">Enqiure Now</button>
+                <button class="Lets_chat_button"type="button">Let's chat</button>
+              </div>
+
+          </div>
+        </div>
+      </nav>
+</header>

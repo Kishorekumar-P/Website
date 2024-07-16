@@ -28,46 +28,7 @@
         <main>
             <section class="Herosection_section">
                 <header>
-                    <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
-                        <div class="container-fluid" >
-                            <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: 138px; height:58px;">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon">
-                                  <!-- <link rel="stylesheet" href="Homepage.html"> -->
-                              </span>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white" style="padding-right: 10px;">
-                                <li class="nav-item">
-                                  <a class="nav-link text-white" aria-current="page" href="Homepage">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white" href="About_us">About</a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                  <a class="nav-link dropdown-auto text-white" href="service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Service
-                                  </a>
-                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">VR</a></li>
-                                    <li><a class="dropdown-item" href="#"></a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white" aria-current="page" href="#">Blog & Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white" href="service">Contact</a>
-                                </li>
-                              </ul>
-                              <div class="nav_button">
-                                <button class="Enquire_button" type="button">Enqiure Now</button>
-                                <button class="Lets_chat_button"type="button">Let's chat</button>
-                              </div>
-  
-                          </div>
-                        </div>
-                      </nav>
+                  {%include 'nav_bar.html'%}
                 </header>
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
@@ -243,42 +204,7 @@
             </section>
         </main>
         <footer>
-          <img src="{%static 'assets/flynet_logo.png'%}" style="width:130px; height: 80px; padding: -60px -60px;" alt="">
-            <div class="container">
-              <div class="footer-content">
-                  <div class="footer-section contact">
-                      <h1>Contact</h1><br>
-                      <p># F-215, F Block,</p>
-                      <p>1st Cross Street, Anna Nagar East,</p>
-                      <p>Chennai - 600 012,</p>
-                      <p>Tamilnadu, India.</p>
-                      <div>
-                        <button onclick="document.getElementById('contact').scrollIntoView()">Enquire Now</button>
-                      </div>
-                  </div>
-                  <div class="footer-section menu">
-                      <h1>Menu</h1><br>
-                      <ul>
-                          <li><a href="#home">Home</a></li>
-                          <li><a href="#about">About</a></li>
-                          <li><a href="#blogs">Blogs & Gallery</a></li>
-                          <li><a href="#contact">Contact</a></li>
-                          <li><a href="#services">Services</a></li>
-                      </ul>
-                  </div>
-                  <div class="footer-section follow">
-                      <h1>Follow Us On</h1><br>
-                      <div class="social-links">
-                          <a href="#"><img src="" alt="Facebook"></a>
-                          <a href="#"><img src="" alt="Twitter"></a>
-                          <a href="#"><img src="" alt="LinkedIn"></a>
-                      </div>
-                  </div>
-              </div>
-            </div><br><br><br>
-            <div class="footer-bottom text-end">
-              <p>&copy; 2024 Powered and secured by Flynet Technologies.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-          </div>
+          {%include 'footer.html'%}
           <!-- <div class="footer">
             <div class="container">
                 <div class="row">

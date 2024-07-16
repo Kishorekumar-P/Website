@@ -11,3 +11,6 @@ def Homepage(request):
 
 def service(request):
     return render(request, "service.html")
+
+def Blog_and_gallery(request):
+    return render(request, "Blog_and_gallery.html")

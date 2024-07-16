@@ -7,7 +7,7 @@ urlpatterns = [
     path("Homepage",views.Homepage, name="Homepage"),
     path("About_us",views.About_us, name="About_us"),
     path("service",views.service, name="service"),
-
+    path("Blog_and_gallery",views.Blog_and_gallery, name="Blog_and_gallery"),
 
 ]
                                                                                                                                                                       
