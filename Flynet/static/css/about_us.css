@@ -3,6 +3,15 @@ body {
     /* background-color: #000; */
     color: #fff;
 }
+.about_us_content_section{
+    width: auto;
+    padding: 100px;
+}
+
+.about_us_sliding_section .container{
+    width: auto;
+    height: auto;
+}
 
 header {
     background-color: #000;
@@ -48,7 +57,7 @@ main .row.text-center .col-md-4 p {
 }
 .carousel-item {
     height: 500px;
-    width: 6585px;
+    width: 1320px;
     background: no-repeat center center scroll;
     background-size: cover;
 }

@@ -14,3 +14,7 @@ def service(request):
 
 def Blog_and_gallery(request):
     return render(request, "Blog_and_gallery.html")
+
+def contact(request):
+    return render(request, "contact.html")
+

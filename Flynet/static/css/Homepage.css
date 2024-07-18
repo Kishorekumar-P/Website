@@ -48,13 +48,19 @@ body, html {
   transition: opacity 0.5s ease;
 }
 .about_us_section{
-  height: 500px;
-  background-color: black;
+  height: 1000px;
+  width: 1440px;
+  background: #000;
   color: white;
 }
-
 .about_us_section .container .row{
   padding: 110px;
+
+}
+.scrolling_logos_section{
+  width: auto;
+  height: 200px;
+  overflow-y: 1723px;
 
 }
 

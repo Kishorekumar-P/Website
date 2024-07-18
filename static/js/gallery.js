@@ -1,10 +1,11 @@
+{%load static%}
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-      '{%%}', // Replace with the actual image paths
-      'image2.jpg',
-      'image3.jpg',
-      'image4.jpg',
-      'image5.jpg'
+      '{%static 'assets/sliding_image1.png'%}', 
+      '{%static 'assets/sliding_image1.png'%}', 
+      '{%static 'assets/sliding_image1.png'%}', 
+      '{%static 'assets/sliding_image1.png'%}', 
+      '{%static 'assets/sliding_image1.png'%}', 
     ];
   
     const gallery = document.getElementById('gallery');

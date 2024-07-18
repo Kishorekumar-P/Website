@@ -98,12 +98,16 @@
             <section class="about_us_section">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-3">
-                    <h1>About Us</h1>
-                  </div>
-                  <div class="col-md-3"><img src="{%static 'assets/left_arrow.png'%}" alt=""></div>
-                  
-                  <div class="col-md-6">
+                  <div class="col-md-4">
+                    <h1><img
+                      src="{%static 'assets/About_us_image.png'%}"
+                      class="img-fluid rounded-top"
+                      alt=""
+                    />
+                    </h1>
+                  </div>                  
+                  <div class="col-md-8">
+                    <h1>Pioneering Your Tech Horizon</h1>
                     <p>
                       Welcome to the fantastical world of Flynet Technologies, where we're not just your allies on this epic tech odyssey—we're your co-conspirators in shaking up the universe! Fueled by an insatiable thirst for the next big thing and a pledge to be nothing short of legendary, we whisk businesses off to a realm of unimaginable success with our magic bag of digital tricks
                     </p>
@@ -139,17 +143,18 @@
                 </div>
             </section>
             <section class="our_service_section">
+              {%include 'services_demo1.html'%}
             </section>
             <section class="why_choose_us_section">
 
             </section>
             <section class="innovate_elevate_inspire_section">
-              <img class="innovate_elevate"src="{%static 'assets/innovate_elevate.png'%}" alt="" style="width: 100%;">
+              <img class="innovate_elevate"src="{%static 'assets/image.png'%}" alt="" style="width: 100%;">
             </section>
             <section class="blog_section">
     
               <div class="container">
-                  <p class="mb-4" style="font-weight: 400; font-size: 64px; ">Latest From The Blog</p>
+                  <p class="mb-4" style="font-weight: 400; font-size: 64px; text-align: center;">Latest From The Blog</p>
                   <div class="row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class="blog-post position-relative">
@@ -205,44 +210,6 @@
         </main>
         <footer>
           {%include 'footer.html'%}
-          <!-- <div class="footer">
-            <div class="container">
-                <div class="row">
-                  
-                    <div class="col-md-4 contact">
-                        <h5>Contact</h5>
-                        <address>
-                            # F-215, F Block,<br>
-                            1st Cross Street, Anna Nagar East,<br>
-                            Chennai - 600 012,<br>
-                            Tamilnadu, India.
-                        </address>
-                        <button class="btn btn-outline-light btn-sm">Enquire now</button>
-                    </div>
-               
-                    <div class="col-md-4 menu">
-                        <h5>Menu</h5>
-                        <ul><a href="#">Home</a></ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Blogs</a></li>
-                    </div>
-
-                    <div class="col-md-4 social">
-                        <h5>Follow Us On</h5>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="mt-3">© 2017 Powered and secured by Flynet Technologies.</p>
-                    </div>
-                </div>
-            </div>
-          </div> -->
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -262,22 +229,5 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-
-        <script>
-        //     $(document).ready(function() {
-        //         $('.scroll-button-left').click(function() {
-        //             $('.scrolling-wrapper').animate({
-        //                 scrollLeft: '-=100'
-        //             }, 500);
-        //         });
-        
-        //         $('.scroll-button-right').click(function() {
-        //             $('.scrolling-wrapper').animate({
-        //                 scrollLeft: '+=100'
-        //             }, 500);
-        //         });
-        //     });
-        // </script>
-    
     </body>
 </html>

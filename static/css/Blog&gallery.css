@@ -10,6 +10,9 @@ body {
 }
 .blogpage_section{
     height: 150vh;
+    padding: 200px;
+    padding-left: 5px;
+    padding-right: 80px;
 }
 .container{
     width: 100%;
@@ -71,4 +74,4 @@ body {
 .gallery img {
     width: 100%;
     height: auto;
-  }
+  }̀
