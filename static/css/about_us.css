@@ -8,11 +8,6 @@ body {
     padding: 100px;
 }
 
-.about_us_sliding_section .container{
-    width: auto;
-    height: auto;
-}
-
 header {
     background-color: #000;
 }
@@ -55,7 +50,7 @@ main .row.text-center .col-md-4 h3 {
 main .row.text-center .col-md-4 p {
     font-size: 1.2em;
 }
-.carousel-item {
+.about_us_sliding_section .carousel-inner .carousel-item {
     height: 500px;
     width: 1320px;
     background: no-repeat center center scroll;

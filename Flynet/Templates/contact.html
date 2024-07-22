@@ -1,69 +1,78 @@
-<!DOCTYPE html>
+{%load static%}
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-        }
-        .contact-form {
-            background: #333;
-            padding: 30px;
-            border-radius: 10px;
-        }
-        .contact-form label {
-            color: #ccc;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="contact-form mt-5">
-                    <form>
-                        <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+    <head>
+        <title>contact</title>
+        <link rel="stylesheet" href="{%static 'css/contact.css'%}">
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            {%include 'nav_bar.html'%}
+        </header>
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-group">
+                                    <div class="a">
+                                        <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                                    </div>
+                                    <label for="firstName">First Name</label><label for="lastName">Last Name</label>
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="text" class="form-control" id="mobileNumber" placeholder="Enter mobile number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    <label for="jobTitle">Job Title</label>
+                                    <input type="text" class="form-control" id="jobTitle" placeholder="Enter job title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Leave us a message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
-                        </div>
-                        <div class="form-group">
-                            <label for="mobileNumber">Mobile Number</label>
-                            <input type="text" class="form-control" id="mobileNumber" placeholder="Enter mobile number">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="jobTitle">Job Title</label>
-                            <input type="text" class="form-control" id="jobTitle" placeholder="Enter job title">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Leave us a message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+        </main>
+        <footer>
+            <!-- {%include 'footer.html'%} -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

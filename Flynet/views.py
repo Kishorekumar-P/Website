@@ -18,3 +18,9 @@ def Blog_and_gallery(request):
 def contact(request):
     return render(request, "contact.html")
 
+def sub_services(request):
+    return render(request, "sub_services.html")
+
+def service_page(request):
+    return render(request, "service_page.html")
+

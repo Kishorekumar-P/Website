@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+}
+main{
+    padding: 100px;
+}
+.contact-form {
+    background:black;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form label {
+    color: #ccc;
+}
