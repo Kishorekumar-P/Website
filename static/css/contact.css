@@ -1,19 +1,54 @@
 body {
-    background-color: black;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
-main{
-    padding: 100px;
+.container{
+    width: 930px;
+    height: 552px;
+    border-radius: 24px;
 }
-.contact-form {
-    background:black;
-    padding: 30px;
-    border-radius: 10px;
+header .nav-link {
+    color: #fff !important;
 }
-.form-group .a{
-    width: 33%;
-    float: left;
+
+header .cta-buttons .btn {
+    margin-left: 10px;
+    border: 1px solid #00bfff;
+    color: #00bfff;
 }
-.contact-form label {
-    color: #ccc;
+
+header .cta-buttons .btn:hover {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+main .container {
+    max-width: 1300px;
+}
+
+form {
+    background-color: #1e1e1e;
+}
+
+form .form-control {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+form .form-control::placeholder {
+    color: #666;
+}
+
+form .btn {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+form .btn:hover {
+    background-color: #444;
 }

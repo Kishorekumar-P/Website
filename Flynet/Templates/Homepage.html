@@ -30,7 +30,15 @@
                 <header>
                   {%include 'nav_bar.html'%}
                 </header>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="background-clip">
+                  <video autoplay loop muted plays-inline class="background-clip">
+                    <source src="{%static 'assets/demo_video.mp4'%}">
+                  </video>
+                </div>
+                <div class="fixed-bottom">
+                  
+                </div>
+                <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
                     <div class="carousel-inner">
                       <div class="carousel-item active" style="background-image: url('{% static 'assets/Sliding_image1.png' %}')" >
                         <div class="hero-content text-start" style="margin:5px 70px 10px;">
@@ -93,7 +101,7 @@
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                  </div> -->
             </section>
             <section class="about_us_section">
               <div class="container">
@@ -168,20 +176,22 @@
                   <p class="mb-4" style="font-weight: 400; font-size: 64px; text-align: center;">Latest From The Blog</p>
                   <div class="row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
+                        <a href="Blog_page">
                           <div class="blog-post position-relative">
-                              <img src="{% static 'assets/ripon_building.png' %}" alt="Blog Image">
-                              <span class="badge badge-popular">Popular</span>
-                              <div class="p-3">
-                                  <p class="text-muted mb-1">Aug 28, 2023 - 2 min</p>
-                                  <h5>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h5>
-                                  <p>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions.</p>
-                                  <div class="d-flex justify-content-between align-items-center">
-                                      <span><i class="fa fa-eye"></i> 39</span>
-                                      <span><i class="fa fa-comments"></i> 0</span>
-                                      <span><i class="fa fa-heart"></i> 3</span>
-                                  </div>
-                              </div>
-                          </div>
+                            <img src="{% static 'assets/ripon_building.png' %}" alt="Blog Image">
+                            <span class="badge badge-popular">Popular</span>
+                            <div class="p-3">
+                                <p class="text-muted mb-1">Aug 28, 2023 - 2 min</p>
+                                <h5>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h5>
+                                <p>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span><i class="fa fa-eye"></i> 39</span>
+                                    <span><i class="fa fa-comments"></i> 0</span>
+                                    <span><i class="fa fa-heart"></i> 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
                       </div>
                       <div class="col-lg-4 col-md-6 col-sm-12">
                           <div class="blog-post position-relative">

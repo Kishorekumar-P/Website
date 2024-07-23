@@ -1,5 +1,5 @@
 {%load static%}
-<header>
+
   <link rel="stylesheet" href="{%static 'css/nav_bar.css'%}">
   <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -10,10 +10,9 @@
       ...
     </div> -->
   </div>
-  
-    <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
-        <div class="container" >
-          <div class="row">
+
+      <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
+          <div class="row" style="justify-content: space-around; width: 100%;">
             <div class="col-md-2">
               <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: 138px; height:58px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,32 +21,33 @@
               </button>
             </div>
             <div class="col-md-8">
-              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white" style="padding-right:;">
+              <div class="collapse navbar-collapse justify-cont" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                   <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" href="Homepage">Home</a>
                   </li>&nbsp;&nbsp;
                   <li class="nav-item">
                     <a class="nav-link text-white" href="About_us">About</a>
                   </li>&nbsp;&nbsp;
-                  <li class="nav-item dropdown ">
+                  <li class="nav-item dropdown "> 
                     <a class="nav-link dropdown-auto text-white" href="service_page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="sub_services">AI Based Surveillance Systems</a></li>
-                      <li><a class="dropdown-item" href="service_page">Drone Product & Technology</a></li>
-                      <li><a class="dropdown-item" href="#">Smart City Solutions</a></li>
-                      <li><a class="dropdown-item" href="#">IT & Audio/Visual Consulting</a></li>
-                      <li><a class="dropdown-item" href="#">Advanced Display Systems</a></li>
-                      <li><a class="dropdown-item" href="#">Data Centre</a></li>
+                      <li><a class="dropdown-item" href="sub_services2">Media Tech</a></li>
+                      <li><a class="dropdown-item" href="sub_services3">Drone Product & Technology</a></li>
+                      <li><a class="dropdown-item" href="sub_services4">Smart City Solutions</a></li>
+                      <li><a class="dropdown-item" href="sub_services5">IT & Audio/Visual Consulting</a></li>
+                      <li><a class="dropdown-item" href="sub_services6">Systems Advanced Display </a></li>
+                      <li><a class="dropdown-item" href="sub_services7">Data Centre</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" href="Blog_and_gallery">Blog & Gallery</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Product</a>
+                    <a class="nav-link text-white" href="Blog_page">Product</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="contact">Contact</a>
@@ -61,6 +61,8 @@
               </div>
             </div>
           </div>
-        </div>
       </nav>
-</header>
+      <footer class="fixed-bottom">
+        
+      </footer>
+

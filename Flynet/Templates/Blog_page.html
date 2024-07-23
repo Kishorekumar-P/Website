@@ -1,7 +1,10 @@
+{%load static%}
+
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Blog</title>
+        <link rel="stylesheet" href="{%static 'css/blog_page.css'%}">
+        <title>Asian Champions Trophy 2023</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -20,11 +23,49 @@
 
     <body>
         <header>
-            {}
+            {%include 'nav_bar.html'%}
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                    <div class="post-header mb-4">
+                        <p class="date text-muted">10 / 8 / 2024</p>
+                        <h1 class="display-4">Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h1>
+                        <div class="badge badge-primary">Technology</div>
+                    </div>
+                    <div class="post-image mb-4">
+                        <img
+                        src="{%static 'assets/ripon_building.png'%}"
+                        class="img-fluid rounded-top"
+                        alt=""
+                        style="width: 1320px; height: 642px;"
+                    />
+                    </div>
+                    <div class="share-buttons mb-4">
+                        <span class="font-weight-bold">Share This:</span>
+                        <a href="#" class="text-info ml-2">Facebook</a>
+                        <a href="#" class="text-info ml-2">Twitter</a>
+                        <a href="#" class="text-info ml-2">LinkedIn</a>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-7">
+                                <h1>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions Trophy 2023. Watch them between 7 and 11pm at the Greater Chennai Corporation building.</h1><br>
+                                <h5>Where is Ripon Building located?</h5>
+                                <p>Ripon Building is near the Chennai Central railway station. It serves as the headquarters of the Chennai Municipal Corporation (earlier Madras Municipal Corporation).</p>
+                                <h5>History of Ripon Building Chennai</h5>
+                                <p>The Ripon Building was built by Loganatha Mudaliar. It was named after Lord Ripon, a Governor-General of British India. And the Earl of Minto laid its foundation in 1909. He was the then Viceroy and Governor General of India. The building took four years to build. And upon its completion in 1913, the Madras Municipal Corporation was settled here. P. L. Moore was its president at that time.</p>
+                                <h5>Architecture of Ripon Building</h5>
+                                <p>Ripon Building in Chennai is a fine example of the Neoclassical style of architecture. This majestic, three-storey, all-white structure is a combination of Gothic, Ionic and Corinthian architectural styles. It features exquisite detailing and decor, pulling in several visitors daily.</p>
+                                <p>It is one of the few structures which hasn’t lost its charm over the years. The walls were constructed with bricks, which were set and plastered with lime mortar. Teak wood supports its roof. And the ground floor of this structure was done with Cuddapah Slate. But it has been replaced with marble. The building has undergone many major renovations over the years and has been maintained well to preserve its beauty.</p>        
+                            </div>
+        
+                        </div>
+                    </div>
+            </div>
+        </main>
         <footer>
-            <!-- place footer here -->
+            {%include 'footer.html'%}
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script

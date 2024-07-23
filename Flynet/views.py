@@ -24,3 +24,23 @@ def sub_services(request):
 def service_page(request):
     return render(request, "service_page.html")
 
+def sub_services2(request):
+    return render(request, "sub_services2.html")
+
+def sub_services3(request):
+    return render(request, "sub_services3.html")
+
+def sub_services4(request):
+    return render(request, "sub_services4.html")
+
+def sub_services5(request):
+    return render(request, "sub_services5.html")
+
+def sub_services6(request):
+    return render(request, "sub_services6.html")
+
+def sub_services7(request):
+    return render(request, "sub_services7.html")
+ 
+def Blog_page(request):
+    return render(request, "Blog_page.html")
