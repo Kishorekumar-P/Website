@@ -2,6 +2,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{%static 'css/contact_page.css'%}">
         <title>contact</title>
         <meta charset="utf-8" />
@@ -25,7 +28,8 @@
         </header>
         <main >
             <div class="container">
-                <form class="bg-black text-white p-4 rounded" id="contactForm">
+                <form action="" method="POST" class="bg-black text-white p-4 rounded" id="contactForm">
+                    {% csrf_token %}
                     <div class="row">
                         <div class="col">
                           <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -34,24 +38,24 @@
                           <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Mobile Number" aria-label="Last name">
+                            <input type="text" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number">
                           </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-8">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="text" class="form-control" placeholder="Job Title" aria-label="Job Title">
                         </div>
                     </div><br>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
 
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="message form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="text" class="message form-control" placeholder="Message" aria-label="Last name">
 
                         </div>
 

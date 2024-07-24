@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{%static 'css/Homepage.css'%}">
         <script src="{% static 'js/Homepage_services.js' %}"></script>
 
@@ -107,15 +110,15 @@
               <div class="container">
                 <h1>About us</h1>
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-6">
                     <img
                       src="{%static 'assets/Rectangle 135.png'%}"
                       class="img-fluid rounded-top"
                       alt=""
                     />
                   </div>                  
-                  <div class="col-md-4">
-                    <h1>Pioneering Your Tech Horizon</h1>
+                  <div class="about_us_section_content col-md-6">
+                    <h2>Pioneering Your Tech Horizon</h2>
                     <p>
                       Welcome to the fantastical world of Flynet Technologies, where we're not just your allies on this epic tech odyssey—we're your co-conspirators in shaking up the universe! Fueled by an insatiable thirst for the next big thing and a pledge to be nothing short of legendary.
                     </p>
@@ -155,21 +158,80 @@
               </div>
               {%include 'services_demo1.html'%}
             </section>
-            <section class="why_choose_us_section">
-
-            </section>
             <section class="innovate_elevate_inspire_section">
-              <!-- <h1 class="innovate_elevate_inspire_text text-center">Innovate.Elevate..<br>Inspire...</h1>
+              <h1 class="innovate_elevate_inspire_text text-center">Innovate.Elevate..<br>Inspire...</h1>
               <div class="light"></div>
               <script type="text/javascript">
                 var pos = document.documentElement;
                 pos.addEventListener('mousemove', e =>{
                   pos.style.setProperty('--x',e.clientX + 'px')
-                  pos.style.SetProperty('--y',e.clientY + 'px')
+                  pos.style.setProperty('--y',e.clientY + 'px')
+                  // console.log(e.clientX , e.clientY);
                 })
-              </script> -->
-              <img class="innovate_elevate"src="{%static 'assets/image.png'%}" alt="" style="width: 100%;">
+              </script>
+              <!-- <img class="innovate_elevate"src="{%static 'assets/image.png'%}" alt="" style="width: 100%;"> -->
             </section>
+            <section class="why_choose_us_section">
+              <div class="container text-center text-white">
+                <h1>Why Choose Us</h1>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                      <div class="icon mb-3">
+                        <h3>AI Surveillance Solutions</h3>
+                    <p>Safeguard what matters most with our state-of-the-art AI surveillance systems.</p>
+                    </div>
+                    
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5">
+                  <div class="col-md-4">
+                    <div class="icon mb-3">
+                      <h3>IT Consulting</h3>
+                      <p>Maximize your technology investments with expert guidance.</p>    
+    
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                   <img
+                    src="{% static 'assets/choose_us.png'%}"
+                    class="img-fluid rounded-top"
+                    alt=""
+                   />
+                   
+                  </div>
+                  <div class="col-md-4">
+                    <div class="icon mb-3">
+                        <h3>Drones</h3>
+                  <p>Elevating Possibilities: Experience the future with our advanced drone solutions.</p> 
+                  </div>
+                  </div>
+              </div>
+
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                          <h3>BPO Services</h3>
+                        <p>Challenge the limits to ignite fresh inspiration and foster continuous expansion.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
             <section class="blog_section">
     
               <div class="container">
@@ -182,8 +244,8 @@
                             <span class="badge badge-popular">Popular</span>
                             <div class="p-3">
                                 <p class="text-muted mb-1">Aug 28, 2023 - 2 min</p>
-                                <h5>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h5>
-                                <p>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions.</p>
+                                <h4>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h4>
+                                <hr>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span><i class="fa fa-eye"></i> 39</span>
                                     <span><i class="fa fa-comments"></i> 0</span>
@@ -199,8 +261,8 @@
                               <span class="badge badge-popular blue">Popular</span>
                               <div class="p-3">
                                   <p class="text-muted mb-1">Aug 28, 2023 - 1 min</p>
-                                  <h5>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h5>
-                                  <p>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions.</p>
+                                  <h4>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h4>
+                                  <hr>
                                   <div class="d-flex justify-content-between align-items-center">
                                       <span><i class="fa fa-eye"></i> 39</span>
                                       <span><i class="fa fa-comments"></i> 0</span>
@@ -215,8 +277,8 @@
                               <span class="badge badge-popular">Popular</span>
                               <div class="p-3">
                                   <p class="text-muted mb-1">Aug 28, 2023 - 1 min</p>
-                                  <h5>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h5>
-                                  <p>Bright colours light up the iconic Ripon building, commemorating the end of the Hero Asian Champions.</p>
+                                  <h4>Asian Champions Trophy 2023 | Watch Chennai’s iconic Ripon building light up to celebrate hockey</h4>
+                                  <hr>
                                   <div class="d-flex justify-content-between align-items-center">
                                       <span><i class="fa fa-eye"></i> 39</span>
                                       <span><i class="fa fa-comments"></i> 0</span>

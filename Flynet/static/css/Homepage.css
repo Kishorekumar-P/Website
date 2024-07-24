@@ -5,7 +5,8 @@
 }
 body{
     height: 1000vh;
-    background-color: black;   
+    background-color: black;
+    font-family: 'lexend';   
  }
 .Herosection_section{
   background-color: black;
@@ -49,25 +50,32 @@ body, html {
 }
 .about_us_section{
   height: 768px;
-  width: 1440px;
+  width: auto;
   background: #000;
   color: white;
 }
-
+.about_us_section h1{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+}
+.about_us_section h2{
+  font-size: 36px;
+}
 .about_us_section .container img{
   width: 482px;
   height: 503px;
-  overflow-x: 60px;
+  /* overflow-x: 60px;
   overflow-y: 185px;
   border-radius: 20px;
   margin-left: 180px;
   margin-right: 10px;
-  margin-top: 80px;
+  margin-top: 80px; */
 }
-.about_us_section .container .col-md-4{
-  overflow-y: 370px;
-  overflow-x: 710px;
-  margin-top: 180px;
+.about_us_section .about_us_section_content{
+  padding: 50px;
+  margin-top: 100px;
 }
 .scrolling_logos_section{
   width: auto;
@@ -97,19 +105,22 @@ body, html {
   align-items: center;
 }
 .innovate_elevate_inspire_section h1{
-  color: #393939;
+  background: radial-gradient(circle, #20c2ec, gray );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 10rem;
   cursor: default;
   
 }
 .innovate_elevate_inspire_section .light{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(138, 37, 37, 0.95) 20%);
+  background: radial-gradient(circle at var(--x) var(--y), transparent 0%, rgba(5, 5, 5, 0.95) 10%);
 }
 footer {
   background: #000;
@@ -255,14 +266,16 @@ footer .container{
   gap: 58.5px;
  }
 .blog-post {
-  border: .5px solid #ddd;
+  border: 1px solid #5F5F5F99;
   border-radius: 24px;
   overflow: hidden;
   transition: all 0s ease;
   width: 401px;
-  height: 640px;
-
-
+  height: 560px;
+}
+.
+.blog_section .row{
+  margin-top: 20px;
 }
 
 .blog-post:hover {
@@ -288,4 +301,11 @@ footer .container{
   background-color: #007bff;
   color: white;
 }
-
+.why_choose_us_section {
+  width: auto;
+  height: 1046px;
+}
+.why_choose_us_section h1{
+  font-size: 64px;
+  font-weight: 500;
+}
