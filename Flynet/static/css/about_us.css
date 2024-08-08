@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    /* background-color: #000; */
-    color: #fff;
 }
 .about_us_content_section{
     width: auto;
+    height: ;
     padding: 100px;
+    color: #fff;
 }
 
 header {
@@ -18,11 +18,14 @@ header .navbar-brand img {
 
 main {
     padding: 20px 0;
+    font-family: 'lexend';
 }
 
 main .container h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'lexend';
+    color: #fff;
 }
 
 main img {
@@ -34,12 +37,18 @@ main img {
 main h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    font-family: 'lexend';
+    color: #fff;
+
 }
 
 main p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 10px;
+    font-family: 'lexend';
+    color: #fff;
+
 }
 
 main .row.text-center .col-md-4 h3 {

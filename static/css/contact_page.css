@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 250px;
+    background: black;
+
+}
+main .container{
+    width: 960px;
+    border-radius: 24px;
+    border: 1px solid #383838;
+}
+header .nav-link {
+    color: #fff !important;
+}
+
+header .cta-buttons .btn {
+    margin-left: 10px;
+    border: 1px solid #00bfff;
+    color: #00bfff;
+}
+
+header .cta-buttons .btn:hover {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+main .container {
+    max-width: 1300px;
+}
+
+form {
+    background-color: black;
+}
+
+.col .form-control{
+    width: 277px;
+    height: 48px;
+}
+form .form-control {
+    background-color: black;
+    border: 1px solid #333;
+    color: #fff;
+    height: 48px;
+    border-radius: 10px;
+}
+.col-md-6 .message{
+    width: 425px;
+    height: 268px;
+}
+
+form .form-control::placeholder {
+    color: #666;
+}
+
+form .btn {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+form .btn:hover {
+    background-color: #444;
+}

@@ -17,26 +17,26 @@
       <nav class="navbar navbar-expand-sm fixed-top" style="margin: 40px 40px 10px;">
           <div class="row" style="justify-content: space-around; width: 100%;">
             <div class="col-md-2">
-              <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: 138px; height:58px;">
+              <img class="header_logo" src="{% static 'assets/flynet_logo.png' %}" alt="" srcset="" style="width: auto; height:90px;">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                 </span>
               </button>
             </div>
             <div class="col-md-8">
-              <div class="collapse navbar-collapse justify-cont" id="navbarSupportedContent" style="margin-left: 280px; font-size: 16px; font-weight: 400; ;">
+              <div class="collapse navbar-collapse justify-cont" id="navbarSupportedContent" style="margin-left: 250px; font-size: 20px; font-weight: 400; ;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                   <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" href="Homepage">Home</a>
-                  </li>&nbsp;&nbsp;
+                  </li>&nbsp;&nbsp;&nbsp;&nbsp;
                   <li class="nav-item">
                     <a class="nav-link text-white" href="About_us">About</a>
-                  </li>&nbsp;&nbsp;
+                  </li>&nbsp;&nbsp;&nbsp;&nbsp;
                   <li class="nav-item dropdown "> 
                     <a class="nav-link dropdown-auto text-white" href="service_page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Service
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
                       <li><a class="dropdown-item" href="sub_services">AI Based Surveillance Systems</a></li>
                       <li><a class="dropdown-item" href="sub_services2">Media Tech</a></li>
                       <li><a class="dropdown-item" href="sub_services3">Drone Product & Technology</a></li>
@@ -45,26 +45,54 @@
                       <li><a class="dropdown-item" href="sub_services6">Systems Advanced Display </a></li>
                       <li><a class="dropdown-item" href="sub_services7">Data Centre</a></li>
                     </ul>
-                  </li>
+                  </li>&nbsp;&nbsp;&nbsp;&nbsp;
                   <li class="nav-item">
                     <a class="nav-link text-white" aria-current="page" href="Blog_and_gallery">Blog & Gallery</a>
-                  </li>
+                  </li>&nbsp;&nbsp;&nbsp;&nbsp;
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="Blog_page">Product</a>
+                    <a class="nav-link text-white" href="service_page">Product</a>
+                  <li class="nav-item">&nbsp;&nbsp;&nbsp;&nbsp;
                   </li>
-                  <li class="nav-item">
                     <a class="nav-link text-white" href="contact">Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-2">
-              <div class="nav_button" style="margin-left: 120px;">
-                <button class="Enquire_button" type="button">Enqiure Now</button>
+              <div class="nav_button" style="margin-left: 180px;">
+                <a
+                  name=""
+                  id=""
+                  class="btn"
+                  href="contact"
+                  role="button"
+                  style="background-color: #20ceec; color: white; border-radius: 10px;"
+                  >Lets Talk</a
+                >
               </div>
             </div>
           </div>
       </nav>
+      <script>
+        let startingPosition = window.scrollY;
+        document.addEventListener('scroll',()=>{
+          const header = document.querySelector('header');
+          console.log(window.scrollY);
+          if (window.scrollY > 0){
+            header.classList.add('scrolled');
+          }
+          else{
+            header.classList.remove('scrolled');
+          }
+          if (window.scrollY > startingPosition){
+            header.classList.add('down');
+          }
+          else{
+            header.classList.remove('down');
+          }
+          startingPosition = window.scrollY;
+        })
+      </script>
       <footer class="fixed-bottom">
         
       </footer>

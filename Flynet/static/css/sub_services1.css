@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sub_service_herosection{
+    width: auto;
+    height: 950px;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    padding: 100px;
+}
+.hero-content hr .service_line{
+    border: 1px solid white;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.hero-content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 700px;
+    justify-content: start;
+}
+
+.key-features .container h1{
+    font-size: 80px;
+    color: white;
+}
+

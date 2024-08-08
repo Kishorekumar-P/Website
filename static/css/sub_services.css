@@ -20,12 +20,14 @@
 .hero-content h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: white;
 }
 
 
 .hero-content h1 {
     font-size: 64px;
     margin-bottom: 20px;
+    color: white;
 }
 
 
@@ -47,8 +49,8 @@
 }
 
 
-.key-features h2, .benefits h2 {
-    font-size: 2em;
+.key-features h1, .benefits h1 {
+    font-size: 200px;
     margin-bottom: 20px;
 }
 
@@ -61,7 +63,6 @@
 
 
 .feature, .benefit-item {
-    max-width: 400px;
     text-align: left;
 }
 
