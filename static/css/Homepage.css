@@ -49,14 +49,18 @@ body, html {
   transition: opacity 0.5s ease;
 }
 .about_us_section{
-  height: 768px;
+  height: 700px;
   width: auto;
   background: #000;
   color: white;
 }
+.about_us_section .row{
+  padding-top: 80px;
+}
 .about_us_section h1{
   margin-top: 20px;
   text-align: center;
+  font-size: 64px;
   font-weight: 500;
 }
 .about_us_section h2{
@@ -65,18 +69,13 @@ body, html {
 .about_us_section .container img{
   width: 482px;
   height: 503px;
-  /* overflow-x: 60px;
-  overflow-y: 185px;
-  border-radius: 20px;
-  margin-left: 180px;
-  margin-right: 10px;
-  margin-top: 80px; */
 }
-/* .about_us_section .about_us_section_content{
-  margin-top: 100px;
-} */
 .about_us_section_content p{
-  font-size: 36px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+}
+.about_us_section_content {
+  padding-top: 50px;
 }
 .scrolling_logos_section{
   width: auto;
@@ -87,8 +86,8 @@ body, html {
 .scrolling_logos_section .logos-slide img{
   box-sizing: border-box;
   overflow-x: 166px;
+  background: #000;
   height: 130px;
-  border: .5px solid white;
   border-radius: 16px;
 }
 .our_service_text {
@@ -151,12 +150,16 @@ footer .container{
   padding: 70px 70px 70px;
 }
 
-.footer-section h3 {
+.footer-section h1 {
   margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Lexend';
 }
 
 .footer-section p {
   margin: 5px 0;
+  font-family: "Work Sans", sans-serif;
+
 }
 
 .footer-section ul {
@@ -209,7 +212,7 @@ footer .container{
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .logos {
@@ -246,7 +249,7 @@ footer .container{
 
 .logos-slide {
   display: inline-block;
-  animation: 20s slide infinite linear;
+  animation: 15s slide infinite linear;
 }
 
 .logos-slide img {
@@ -305,6 +308,7 @@ footer .container{
 .why_choose_us_section {
   width: auto;
   height: 1046px;
+  padding: 100px;
 }
 .why_choose_us_section h1{
   font-size: 64px;

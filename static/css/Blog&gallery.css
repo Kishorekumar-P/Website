@@ -6,10 +6,8 @@ body {
 .our_blogs_text .container p {
     text-align: start;
     margin-bottom: 2rem;
-    font-size: 50px;
 }
 .blogpage_section{
-    height: 150vh;
     padding: 200px;
     padding-left: 5px;
     padding-right: 80px;
@@ -41,6 +39,11 @@ body {
 .blog-item img {
     width: 420px;
     height: 420px;
+}
+.blog-item p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'lexend';
 }
 
 .blog-content {

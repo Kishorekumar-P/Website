@@ -108,6 +108,20 @@
                     </button>
                   </div> -->
             </section>
+            <section class="innovate_elevate_inspire_section">
+              <h1 class="innovate_elevate_inspire_text text-center">Innovate.Elevate..<br>Inspire...</h1>
+              <div class="light"></div>
+              <script type="text/javascript">
+                var pos = document.documentElement;
+                pos.addEventListener('mousemove', e =>{
+                  pos.style.setProperty('--x',e.clientX + 'px')
+                  pos.style.setProperty('--y',e.clientY + 'px')
+                  // console.log(e.clientX , e.clientY);
+                })
+              </script>
+              <!-- <img class="innovate_elevate"src="{%static 'assets/image.png'%}" alt="" style="width: 100%;"> -->
+            </section>
+
             <section class="about_us_section">
               <div class="container">
                 <h1>About us</h1>
@@ -167,22 +181,9 @@
               </div>
               {%include 'services_demo1.html'%}
             </section>
-            <section class="innovate_elevate_inspire_section">
-              <h1 class="innovate_elevate_inspire_text text-center">Innovate.Elevate..<br>Inspire...</h1>
-              <div class="light"></div>
-              <script type="text/javascript">
-                var pos = document.documentElement;
-                pos.addEventListener('mousemove', e =>{
-                  pos.style.setProperty('--x',e.clientX + 'px')
-                  pos.style.setProperty('--y',e.clientY + 'px')
-                  // console.log(e.clientX , e.clientY);
-                })
-              </script>
-              <!-- <img class="innovate_elevate"src="{%static 'assets/image.png'%}" alt="" style="width: 100%;"> -->
-            </section>
             <section class="why_choose_us_section">
               <div class="container text-center text-white">
-                <h1>Why Choose Us</h1>
+                <h1>Why Us</h1>
                 <div class="row justify-content-center align-items-center mt-5">
                     <div class="col-md-4">
                         
@@ -222,7 +223,7 @@
                   </div>
               </div>
 
-                <div class="row justify-content-center align-items-center mt-5">
+                <!-- <div class="row justify-content-center align-items-center mt-5">
                     <div class="col-md-4">
                         
                     </div>
@@ -232,7 +233,7 @@
                         <p>Challenge the limits to ignite fresh inspiration and foster continuous expansion.</p>
                         </div>
                         
-                    </div>
+                    </div> -->
                     <div class="col-md-4">
                         
                     </div>
@@ -244,7 +245,7 @@
             <section class="blog_section">
     
               <div class="container">
-                  <p class="mb-4" style="font-weight: 400; font-size: 64px; text-align: center;">Latest From The Blog</p>
+                  <p class="mb-4" style="font-weight: 400; font-size: 64px; text-align: center;">Our Blogs</p>
                   <div class="row">
                       <div class="col-lg-4 col-md-6 col-sm-12">
                         <a href="Blog_page">

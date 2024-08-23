@@ -3,7 +3,6 @@ body {
 }
 .about_us_content_section{
     width: auto;
-    height: ;
     padding: 100px;
     color: #fff;
 }
@@ -16,30 +15,18 @@ header .navbar-brand img {
     width: 100px;
 }
 
-main {
-    padding: 20px 0;
-    font-family: 'lexend';
-}
 
-main .container h1 {
-    font-size: 3em;
+/* main h2 {
+    font-size: 34px;
+    font-weight: 100;
     margin-bottom: 20px;
     font-family: 'lexend';
-    color: #fff;
-}
+} */
 
 main img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
-}
-
-main h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: 'lexend';
-    color: #fff;
-
 }
 
 main p {
@@ -51,14 +38,6 @@ main p {
 
 }
 
-main .row.text-center .col-md-4 h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-main .row.text-center .col-md-4 p {
-    font-size: 1.2em;
-}
 .about_us_sliding_section .carousel-inner .carousel-item {
     height: 500px;
     width: 1320px;
@@ -73,14 +52,14 @@ main .row.text-center .col-md-4 p {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-.tab-content h2 {
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.hero-content h1{
+    font-size: 50px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+}
+.hero-content p .lead{
+    font-size: 30px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
 }
 
-.tab-content p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
