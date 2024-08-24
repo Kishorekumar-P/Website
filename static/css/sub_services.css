@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sub_service_herosection{
+    width: auto;
+    height: 950px;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    padding: 100px;
+}
+.hero-content hr .service_line{
+    border: 1px solid white;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.hero-content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 800px;
+    justify-content: start;
+}
+
+
+.key-features, .benefits {
+    padding: 50px 20px;
+}
+
+
+.key-features h1, .benefits h1 {
+    font-size: 200px;
+    margin-bottom: 20px;
+}
+
+
+.features, .benefit-items {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+
+.feature, .benefit-item {
+    text-align: left;
+}
+
+
+.feature h3, .benefit-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.feature p{
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: #111;`        
+    padding: 20px;
+    text-align: center;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.contact, .menu, .social {
+    max-width: 300px;
+}
+
+
+.contact h3, .menu h3, .social h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+.contact p, .menu ul, .social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.menu ul, .social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.menu a, .social a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.social a img {
+    width: 20px;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+
+.footer-bottom p {
+    font-size: 0.8em;
+}

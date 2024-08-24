@@ -1,0 +1,45 @@
+{%load static%}
+<footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/Homepage.css'%}">
+      <div class="container">
+        <div class="row"></div>
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h1>Contact</h1><br>
+                <p># F-215, F Block,</p>
+                <p>1st Cross Street, <br>Anna Nagar East,</p>
+                <p>Chennai - 600 012,</p>
+                <p>TamilNadu, India.</p>
+                <div>
+                  <button onclick="document.getElementById('contact').scrollIntoView()">Enquire Now</button>
+                </div>
+            </div>
+            <div class="footer-section menu">
+                <h1>Menu</h1><br>
+                <ul>
+                    <li><a href="Homepage">Home</a></li>
+                    <li><a href="About_us">About</a></li>
+                    <li><a href="service_page">Services</a></li>
+                    <li><a href="Blog_and_gallery">Blogs</a></li>
+                    <li><a href="#contact">product</a></li>
+                    <li><a href="contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section follow">
+                <h1>Follow Us</h1><br>
+                <div class="social-links">
+                    <a href="#"><img src="{%static 'assets/fb.png'%}" alt="Facebook"></a>
+                    <a href="#"><img src="{%static 'assets/twitter.png'%}" alt="Twitter"></a>
+                    <a href="#"><img src="{%static 'assets/linkedin.png'%}" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+      </div><br><br><br>
+      <div class="footer-bottom text-end">
+        <p>&copy; 2024 Powered and secured by Flynet Technologies.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+</footer>
